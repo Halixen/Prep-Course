@@ -199,21 +199,25 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  console.log(str + "!");
-}
+  console.log(str + "!") 
+    return agregarSimboloExclamacion;
+  }
+
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log(nombre + ' ' + apellido);
+  console.log(nombre + ' ' + apellido) 
+    return combinarNombres;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log ('Hola' + ' ' + nombre + '!');
+  console.log ('Hola' + ' ' + nombre + '!')
+    return obtenerSaludo;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -257,9 +261,12 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
     console.log('Es vocal')
+      return esVocal;
    } else if (letra.length !== 1) {
-   console.log('Dato incorrecto') 
+   console.log('Dato incorrecto')
+    return esVocal;
    } else console.log('Dato incorrecto')
+    return esVocal;
    }
 
 
