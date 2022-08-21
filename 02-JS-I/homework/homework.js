@@ -66,7 +66,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
+  if (x === y) {
     return true;
   } else {
     return false
@@ -78,7 +78,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
   } else {
     return false
@@ -118,7 +118,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true; 
   } else {
     return false;
@@ -129,7 +129,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return false;
   } else { 
     return true;
@@ -184,7 +184,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (numero == 0) {
+if (numero === 0) {
   return false;
 } else if (numero > 0) {
   return "Es positivo";
@@ -199,7 +199,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return console.log(str + "!")
+  var frase = (str + "!")
+  return frase;
   }
 
 
@@ -207,14 +208,16 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return console.log(nombre + ' ' + apellido) 
+  var nombre = (nombre + ' ' + apellido) 
+  return nombre;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return console.log ('Hola' + ' ' + nombre + '!')
+  var saludo = ('Hola' + ' ' + nombre + '!')
+  return saludo;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -236,7 +239,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-var areaDelTriangulo = ((base * altura) / 2)
+var areaDelTriangulo = (base * altura) / 2
 return areaDelTriangulo;
 }
 
@@ -257,13 +260,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
-    console.log('Es vocal')
-      return esVocal;
-   } else if (letra.length !== 1) {
-   console.log('Dato incorrecto')
-    return esVocal;
-   } else console.log('Dato incorrecto')
-    return esVocal;
+      return "Es Vocal";
+   } 
+   if (letra.length !== 1) {
+    return 'Dato incorrecto';
+   } 
+    return 'Dato incorrecto';
    }
 
 
